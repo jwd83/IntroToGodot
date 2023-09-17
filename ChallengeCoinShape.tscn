@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmbm64hwtudgy"]
+
+[ext_resource type="Texture2D" uid="uid://bgk7tkf787qmo" path="res://Sprites/Coin.png" id="1_g7iog"]
+
+[node name="ChallengeCoinShape" type="Node2D"]
+
+[node name="Coin" type="Sprite2D" parent="."]
+position = Vector2(106.255, 40)
+texture = ExtResource("1_g7iog")
+
+[node name="Coin2" type="Sprite2D" parent="."]
+position = Vector2(105.255, 94)
+texture = ExtResource("1_g7iog")
+
+[node name="Coin3" type="Sprite2D" parent="."]
+position = Vector2(156, 67)
+rotation = 0.785398
+texture = ExtResource("1_g7iog")
+
+[node name="Coin4" type="Sprite2D" parent="."]
+position = Vector2(54, 66)
+rotation = 0.785398
+texture = ExtResource("1_g7iog")
+
+[node name="Coin5" type="Sprite2D" parent="."]
+position = Vector2(89, 66)
+scale = Vector2(0.520003, 0.520001)
+texture = ExtResource("1_g7iog")
+
+[node name="Coin6" type="Sprite2D" parent="."]
+position = Vector2(122, 67)
+scale = Vector2(0.520003, 0.520001)
+texture = ExtResource("1_g7iog")

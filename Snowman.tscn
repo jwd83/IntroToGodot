@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cnnyubphxxnhb"]
+
+[ext_resource type="Material" uid="uid://bokmijs6xsp4w" path="res://Materials/PlayerMaterialBall.tres" id="1_guk88"]
+[ext_resource type="Material" uid="uid://njrwvd10uejv" path="res://Materials/GhostBall.tres" id="2_w7vtl"]
+[ext_resource type="Material" uid="uid://bw04qso7v36yl" path="res://Materials/PinkBall.tres" id="3_8jlsp"]
+[ext_resource type="Material" uid="uid://c3nvodngkw8gc" path="res://Materials/TestMaterial.tres" id="4_df6ty"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_3p8q5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l4fcw"]
+
+[node name="Snowman" type="Node3D"]
+transform = Transform3D(0.303836, 0, 0, 0, 0.101584, 0, 0, 0, 0.130558, -0.511779, 0.807452, -0.0182867)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.36714, 0, 0, 0, 7.08009, 0, 0, 0, 5.50885, 0.942855, -5.26059, -0.0405884)
+material_override = ExtResource("1_guk88")
+mesh = SubResource("SphereMesh_3p8q5")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.657, 0, 0, 0, 4.95606, 0, 0, 0, 3.85619, 0.942855, -0.31878, -0.0405884)
+material_override = ExtResource("2_w7vtl")
+mesh = SubResource("SphereMesh_3p8q5")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.946857, 0, 0, 0, 2.83204, 0, 0, 0, 2.20354, 0.942855, 2.90072, -0.0405884)
+material_override = ExtResource("3_8jlsp")
+mesh = SubResource("SphereMesh_3p8q5")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97957, 0, 0)
+material_override = ExtResource("4_df6ty")
+mesh = SubResource("BoxMesh_l4fcw")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+material_override = ExtResource("4_df6ty")
+mesh = SubResource("BoxMesh_l4fcw")
+skeleton = NodePath("../..")

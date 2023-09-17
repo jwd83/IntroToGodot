@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://0efjathynbi5"]
+
+[ext_resource type="PackedScene" uid="uid://cnnyubphxxnhb" path="res://Snowman.tscn" id="1_dk4b2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Snowman" parent="." instance=ExtResource("1_dk4b2")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.994833, -0.101525, 0, -0.101525, 0.994833, 0, 0, 0, 1, 26.3708, -1.82149, 13.4909)
+light_color = Color(0.741176, 0, 0.0117647, 1)
+omni_range = 25.4015

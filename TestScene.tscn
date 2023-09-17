@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cln1f3ks3abea"]
+
+[ext_resource type="PackedScene" uid="uid://cbfmwek6on7o7" path="res://Player.tscn" id="1_p3vyh"]
+[ext_resource type="PackedScene" uid="uid://cmbm64hwtudgy" path="res://ChallengeCoinShape.tscn" id="2_q7ejm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_p3vyh")]
+position = Vector2(81, 41)
+rotation = 0.0641469
+scale = Vector2(2.31574, 1.66788)
+
+[node name="Player2" parent="." instance=ExtResource("1_p3vyh")]
+position = Vector2(450, 95)
+scale = Vector2(1.5, 1.5)
+
+[node name="Player3" parent="." instance=ExtResource("1_p3vyh")]
+position = Vector2(69, 274)
+
+[node name="Player4" parent="." instance=ExtResource("1_p3vyh")]
+position = Vector2(63, 156)
+
+[node name="Node2D" parent="." instance=ExtResource("2_q7ejm")]
+position = Vector2(145, 183)
